@@ -8,13 +8,24 @@
 
   <body>
     <header>
-      <a href="">
-        <p class="header-logo">DEVICE</p>
+      <a href="index.html">
+        <img src="http://placehold.it/150x50" class="header-logo" alt="DEVICE" width="150" height="50">
       </a>
-      <div class="header-left">
+      <div class="header-top">
         <div class="header-search">
           <input type="search" placeholder="Поиск по сайту">
         </div>
+        <ul class="header-login">
+          <li><a href="login.html">Войти</a></li>
+          <li><a href="profile.html">Валентин Петухов</a></li>
+          <li><a href="logout.html">Выйти</a></li>
+        </ul>
+        <ul class="header-buy">
+          <li class="header-buy-item"><a href="compare.html">Сравнить</a></li>
+          <li class="header-buy-item"><a href="basket.html">Корзина</a></li>
+        </ul>
+      </div>
+      <nav class="main-navigation">
         <div class="header-catalog">
           <p>
             Каталог товаров <span>+</span>
@@ -30,32 +41,17 @@
             </ul>
           </nav>
         </div>
-      </div>
-      <div class="header-right">
-        <div class="header-top">
-          <ul class="header-login">
-            <li><a href="login.html">Войти</a></li>
-            <li><a href="profile.html">Валентин Петухов</a></li>
-            <li><a href="logout.html">Выйти</a></li>
-          </ul>
-          <ul class="header-buy">
-            <li class="header-compare"><a href="compare.html">Сравнить</a></li>
-            <li class="header-basket"><a href="basket.html">Корзина</a></li>
-          </ul>
-        </div>
-        <div class="header-bottom">
-          <ul class="header-menu">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
+        <ul class="header-menu">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
       <div class="slider">
-        <section class="slide1">
+        <section class="slide">
           <h2>Палка для селфи</h2>
           <div class="slide-img">
             <img src="http://placehold.it/384x486" alt="Палка для селфи" width="384" height="486">
@@ -67,6 +63,7 @@
               Самая длиная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
             <a href="#">
+              <!-- p ввел для стилизации, чтобы было чему задавать градиент -->
               <p class="slider-link">
                 Подробнее
               </p>
@@ -85,7 +82,7 @@
             </table>
           </div>
         </section>
-        <section class="slide2">
+        <section class="slide">
           <h2>Фитнес-браслет</h2>
           <div class="slide-img">
             <img src="http://placehold.it/345x485" alt="Фитнес-браслет" width="345" height="485">
@@ -111,7 +108,7 @@
             </table>
           </div>
         </section>
-        <section class="slide3">
+        <section class="slide">
           <h2>Квадрокоптер</h2>
           <div class="slide-img">
             <img src="http://placehold.it/526x334" alt="Квадрокоптер" width="526" height="334">
@@ -214,19 +211,19 @@
             <li class="services-name-item">Кредит</li>
           </ul>
         </div>
-        <div class="services-item1">
+        <div class="services-item">
           <h3>Доставка</h3>
           <p class="services-description">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </div>
-        <div class="services-item2">
+        <div class="services-item">
           <h3>Гарантия</h3>
           <p class="services-description">
             Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
           </p>
         </div>
-        <div class="services-item3">
+        <div class="services-item">
           <h3>Кредит</h3>
           <p class="services-description">
             Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
@@ -235,14 +232,22 @@
       </section>
       <section class="logotypes">
         <h2 class="visually-hidden">Партнеры</h2>
-        <img src="img/logo-dji.jpg" alt="DJI" class="logo-dji">
-        <img src="img/logo-spgadjets.jpg" alt="SPGadjets" class="logo-spgadjets">
-        <img src="img/logo-gopro.jpg" alt="GoPro" class="logo-gopro">
-        <img src="img/logo-vive.jpg" alt="VIVE" class="logo-vive">
+        <a href="https://www.dji.com">
+          <img src="img/logo-dji.jpg" alt="DJI">
+        </a>
+        <a href="http://www.sp-gadgets.com">
+          <img src="img/logo-spgadjets.jpg" alt="SPGadjets">
+        </a>
+        <a href="https://gopro.ru">
+          <img src="img/logo-gopro.jpg" alt="GoPro">
+        </a>
+        <a href="https://www.vive.com">
+          <img src="img/logo-vive.jpg" alt="VIVE">
+        </a>
       </section>
       <div class="container-about">
         <section class="about">
-          <h2 class="about-head">О нас</h2>
+          <h2 class="about-title">О нас</h2>
           <p class="about-description">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
@@ -272,7 +277,9 @@
     </main>
     <footer>
       <div class="footer-top">
-        <p class="footer-logo">DEVICE</p>
+        <a href="index.html">
+          <img src="http://placehold.it/150x50" class="footer-logo" alt="DEVICE" width="150" height="50">
+        </a>
         <div class="footer-links">
           <ul class="footer-login">
             <li><a href="login.html">Войти</a></li>
@@ -280,8 +287,8 @@
             <li><a href="logout.html">Выйти</a></li>
           </ul>
           <ul class="header-buy">
-            <li class="header-compare"><a href="compare.html">Сравнить</a></li>
-            <li class="header-basket"><a href="basket.html">Корзина</a></li>
+            <li class="header-buy-item"><a href="compare.html">Сравнить</a></li>
+            <li class="header-buy-item"><a href="basket.html">Корзина</a></li>
           </ul>
         </div>
       </div>
@@ -301,7 +308,6 @@
         </a>
       </div>
       <div class="footer-bottom">
-        <div class="footer-dash"></div>
         <ul class="footer-social">
           <li class="footer-social-icon">
             <a href="#">
@@ -320,8 +326,8 @@
           </li>
         </ul>
         <div class="footer-copyright">
-          <a href="https://htmlacademy.ru">
-            <img src="img/copy.jpg" alt="htmlacademy.ru" class="footer-image">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/copy.jpg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
           </a>
         </div>
       </div>
@@ -344,7 +350,7 @@
       </form>
     </div>
     <div class="map-window">
-      <img src="http://placehold.it/960x559" alt="" class="poppup-map" width="960" height="559">
+      <img src="http://placehold.it/960x559" alt="улица Строителей, 15" width="960" height="559">
     </div>
   </body>
 
