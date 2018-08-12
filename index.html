@@ -7,8 +7,8 @@
   </head>
 
   <body>
-    <header>
-      <a href="index.html">
+    <header class="main-header">
+      <a>
         <img src="http://placehold.it/150x50" class="header-logo" alt="DEVICE" width="150" height="50">
       </a>
       <div class="header-top">
@@ -26,12 +26,10 @@
         </ul>
       </div>
       <nav class="main-navigation">
-        <div class="header-catalog">
-          <p>
+        <ul class="header-menu">
+          <li>
             Каталог товаров <span>+</span>
-          </p>
-          <nav class="main-navigation">
-            <ul>
+            <ul class="catalog-navigation">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -39,9 +37,7 @@
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
-          </nav>
-        </div>
-        <ul class="header-menu">
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -62,12 +58,7 @@
             <p class="slider-description">
               Самая длиная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a href="#">
-              <!-- p ввел для стилизации, чтобы было чему задавать градиент -->
-              <p class="slider-link">
-                Подробнее
-              </p>
-            </a>
+            <a href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Длина палки</th>
@@ -93,11 +84,7 @@
             <p class="slider-description">
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
-            <a href="#">
-              <p class="slider-link">
-                Подробнее
-              </p>
-            </a>
+            <a href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Без подзарядки</th>
@@ -119,11 +106,7 @@
             <p class="slider-description">
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
-            <a href="#">
-              <p class="slider-link">
-                Подробнее
-              </p>
-            </a>
+            <a href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Дальность полета</th>
@@ -204,13 +187,11 @@
       </section>
       <section class="services">
         <h2>Сервис</h2>
-        <div class="services-name">
-          <ul class="services-name-list">
-            <li class="services-name-item">Доставка</li>
-            <li class="services-name-item">Гарантия</li>
-            <li class="services-name-item">Кредит</li>
-          </ul>
-        </div>
+        <ul class="services-name-list">
+          <li class="services-name-item">Доставка</li>
+          <li class="services-name-item">Гарантия</li>
+          <li class="services-name-item">Кредит</li>
+        </ul>
         <div class="services-item">
           <h3>Доставка</h3>
           <p class="services-description">
@@ -259,25 +240,21 @@
             <li class="about-item">Автотрейдинг</li>
             <li class="about-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="about.html" class="about-link">
-            <p class="about-link-text">Подробнее о нас</p>
-          </a>
+          <a href="about.html" class="about-link">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="about-head">Контакты</h2>
+          <h2 class="about-title">Контакты</h2>
           <p class="about-description">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <img src="img/map.jpg" alt="улица Строителей, 15" class="about-map" width="560" height="222">
-          <a href="write.html" class="about-link">
-            <p class="about-link-text">Напишите нам</p>
-          </a>
+          <a href="write.html" class="about-link">Напишите нам</a>
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="footer-top">
-        <a href="index.html">
+        <a>
           <img src="http://placehold.it/150x50" class="footer-logo" alt="DEVICE" width="150" height="50">
         </a>
         <div class="footer-links">
@@ -325,11 +302,9 @@
             </a>
           </li>
         </ul>
-        <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/copy.jpg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
-          </a>
-        </div>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/copy.jpg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+        </a>
       </div>
     </footer>
     <div class="form-window">

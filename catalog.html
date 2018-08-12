@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <a href="index.html">
         <img src="http://placehold.it/150x50" class="header-logo" alt="DEVICE" width="150" height="50">
       </a>
@@ -26,20 +26,18 @@
         </ul>
       </div>
       <nav class="main-navigation">
-        <div class="header-catalog">
-          <p>
-            Каталог товаров <span>+</span>
-          </p>
-          <ul class="catalog-navigation">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </div>
         <ul class="header-menu">
+          <li>
+            Каталог товаров <span>+</span>
+            <ul class="catalog-navigation">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -58,6 +56,16 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
+        <div class="catalog-sort">
+          <h3>Сортировка:</h3>
+          <ul class="catalog-sort">
+            <li class="sort-name"><a href="#">По цене</a></li>
+            <li class="sort-name"><a href="#">По типу</a></li>
+            <li class="sort-name"><a href="#">По популярности</a></li>
+            <li class="sort-toup"><a href="#">&#9650;</a></li>
+            <li class="sort-todown"><a href="#">&#9660;</a></li>
+          </ul>
+        </div>
         <ul class="catalog-list">
           <li>
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Любительская селфи-палка">
@@ -97,7 +105,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="footer-top">
         <a href="index.html">
           <img src="http://placehold.it/150x50" class=" footer-logo" alt="DEVICE" width="150" height="50">
@@ -147,11 +155,9 @@
             </a>
           </li>
         </ul>
-        <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/copy.jpg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
-          </a>
-        </div>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/copy.jpg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+        </a>
       </div>
     </footer>
   </body>
