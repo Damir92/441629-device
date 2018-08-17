@@ -13,55 +13,91 @@
       </a>
       <div class="header-top">
         <div class="header-search">
-          <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-          <input id="header-search" type="search" placeholder="Поиск по сайту">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+            <input id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
+            <button class="button-search" type="submit">Найти</button>
+          </form>
         </div>
         <ul class="header-login">
-          <li><a href="login.html">Войти</a></li>
-          <li><a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a></li>
-          <li><a href="logout.html">Выйти</a></li>
+          <li>
+            <a href="login.html">Войти</a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
+          </li>
+          <li>
+            <a href="logout.html">Выйти</a>
+          </li>
         </ul>
         <ul class="header-buy">
-          <li class="header-buy-item"><a href="compare.html">Сравнить</a></li>
-          <li class="header-buy-item"><a href="basket.html">Корзина</a></li>
+          <li class="header-buy-item">
+            <a href="compare.html">Сравнить</a>
+          </li>
+          <li class="header-buy-item">
+            <a href="basket.html">Корзина</a>
+          </li>
         </ul>
       </div>
       <nav class="main-navigation">
         <ul class="header-menu">
           <li>
-            Каталог товаров <span>+</span>
+            <a href="#">Каталог товаров <span>+</span></a>
             <ul class="catalog-navigation">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li class="breadcrumbs-current">
+          <a>Моноподы для селфи</a>
+        </li>
       </ul>
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Стоимость</legend>
-              <input type="range" min="0" max="5000" step="100">
-              <div class="range-name">
-                <p class="range-min">От 0</p>
-                <p class="range-max">до 5000</p>
-              </div>
+            <div class="price-input">
+              От <input class="price-from" type="number" value="0" min="0" max="5000" step="100">
+              до <input class="price-to" type="number" value="5000" min="0" max="5000" step="100">
+            </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -109,11 +145,21 @@
         <div class="catalog-sort">
           <h3>Сортировка:</h3>
           <ul class="catalog-sort">
-            <li class="sort-name"><a href="#">По цене</a></li>
-            <li class="sort-name"><a href="#">По типу</a></li>
-            <li class="sort-name"><a href="#">По популярности</a></li>
-            <li class="sort-to-up"><a href="#" aria-label="По возрастанию">&#9650;</a></li>
-            <li class="sort-to-down"><a href="#" aria-label="По убыванию">&#9660;</a></li>
+            <li class="sort-name">
+              <a href="#">По цене</a>
+            </li>
+            <li class="sort-name">
+              <a href="#">По типу</a>
+            </li>
+            <li class="sort-name">
+              <a href="#">По популярности</a>
+            </li>
+            <li class="sort-to-up">
+              <a href="#" aria-label="По возрастанию">&#9650;</a>
+            </li>
+            <li class="sort-to-down">
+              <a href="#" aria-label="По убыванию">&#9660;</a>
+            </li>
           </ul>
         </div>
         <ul class="catalog-list">
@@ -147,11 +193,21 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-back"><a href="#">Назад</a></li>
-          <li class="pagination-item pagintaion-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-back"><a href="#">Вперед</a></li>
+          <li class="pagination-back">
+            <a href="#">Назад</a>
+          </li>
+          <li class="pagination-item pagintaion-item-current">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-back">
+            <a href="#">Вперед</a>
+          </li>
         </ul>
       </section>
     </main>
@@ -162,13 +218,23 @@
         </a>
         <div class="footer-links">
           <ul class="footer-login" aria-label="Блок авторизации">
-            <li><a href="login.html">Войти</a></li>
-            <li><a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a></li>
-            <li><a href="logout.html">Выйти</a></li>
+            <li>
+              <a href="login.html">Войти</a>
+            </li>
+            <li>
+              <a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
+            </li>
+            <li>
+              <a href="logout.html">Выйти</a>
+            </li>
           </ul>
           <ul class="header-buy" aria-label="Блок покупок">
-            <li class="header-buy-item"><a href="compare.html">Сравнить</a></li>
-            <li class="header-buy-item"><a href="basket.html">Корзина</a></li>
+            <li class="header-buy-item">
+              <a href="compare.html">Сравнить</a>
+            </li>
+            <li class="header-buy-item">
+              <a href="basket.html">Корзина</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -177,19 +243,23 @@
           г. Москва, ул. Строителей, 15
         </p>
         <ul class="footer-menu">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
         <a href="tel:+74954959595" class="footer-phone">
-          <p class="footer-phone">
-            Тел.: +7(495)495-95-95
-          </p>
+          Тел.: +7(495)495-95-95
         </a>
       </div>
       <div class="footer-bottom">
         <ul class="footer-social">
-          <li class="footer-social-icon" aria-label="Мы в социльных сетях">
+          <li class="footer-social-icon">
             <a href="#">
               Facebook
             </a>
