@@ -13,7 +13,7 @@
       </a>
       <div class="header-top">
         <div class="header-search">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="header-search">Поиск по сайту</label>
             <input id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
             <button class="button-search" type="submit">Найти</button>
@@ -95,31 +95,37 @@
           <fieldset>
             <legend>Стоимость</legend>
             <div class="price-input">
-              От <input class="price-from" type="number" value="0" min="0" max="5000" step="100">
-              до <input class="price-to" type="number" value="5000" min="0" max="5000" step="100">
+              <label class="price-label">
+                От
+                <input class="price-from" type="number" value="0" min="0" max="5000" step="100" name="price-from">
+              </label>
+              <label class="price-label">
+                до
+                <input class="price-to" type="number" value="5000" min="0" max="5000" step="100" name="price-to">
+              </label>
             </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-checkbox" id="filter-color-black" type="checkbox" name="black" checked>
+                <input class="visually-hidden filter-checkbox" id="filter-color-black" type="checkbox" name="black" value="black" checked>
                 <label for="filter-color-black">Черный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checkbox" id="filter-color-white" type="checkbox" name="white">
+                <input class="visually-hidden filter-checkbox" id="filter-color-white" type="checkbox" name="white" value="white">
                 <label for="filter-color-white">Белый</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checkbox" id="filter-color-blue" type="checkbox" name="blue" checked>
+                <input class="visually-hidden filter-checkbox" id="filter-color-blue" type="checkbox" name="blue" value="blue" checked>
                 <label for="filter-color-blue">Синий</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checkbox" id="filter-color-red" type="checkbox" name="red" checked>
+                <input class="visually-hidden filter-checkbox" id="filter-color-red" type="checkbox" name="red" value="red" checked>
                 <label for="filter-color-red">Красный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-checkbox" id="filter-color-pink" type="checkbox" name="pink">
+                <input class="visually-hidden filter-checkbox" id="filter-color-pink" type="checkbox" name="pink" value="pink">
                 <label for="filter-color-pink">Розовый</label>
               </li>
             </ul>
