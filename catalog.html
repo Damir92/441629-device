@@ -4,79 +4,81 @@
   <head>
     <meta charset="UTF-8">
     <title>Моноподы для селфи</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="main-header">
-      <a href="index.html">
+      <a class="nav-link" href="index.html">
         <img src="img/logo.svg" class="header-logo" alt="DEVICE" width="164" height="36">
       </a>
       <div class="header-top">
         <div class="header-search">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-            <input id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
+            <input class="search-input" id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
             <button class="button-search" type="submit">Найти</button>
           </form>
         </div>
         <ul class="header-login">
           <li>
-            <a href="login.html">Войти</a>
+            <a class="nav-link" href="login.html">Войти</a>
           </li>
           <li>
-            <a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
+            <a class="nav-link" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
           </li>
           <li>
-            <a href="logout.html">Выйти</a>
+            <a class="nav-link" href="logout.html">Выйти</a>
           </li>
         </ul>
         <ul class="header-buy">
           <li class="header-buy-item">
-            <a href="compare.html">Сравнить</a>
+            <a class="nav-link" href="compare.html">Сравнить</a>
           </li>
           <li class="header-buy-item">
-            <a href="basket.html">Корзина</a>
+            <a class="nav-link" href="basket.html">Корзина</a>
           </li>
         </ul>
       </div>
       <nav class="main-navigation">
         <ul class="header-menu">
           <li>
-            <a href="#">Каталог товаров <span>+</span></a>
+            <a class="nav-link" href="#">Каталог товаров</a>
             <ul class="catalog-navigation">
               <li>
-                <a href="#">Виртуальная реальность</a>
+                <a class="nav-link" href="#">Виртуальная реальность</a>
               </li>
               <li>
-                <a href="#">Моноподы для селфи</a>
+                <a class="nav-link" href="#">Моноподы для селфи</a>
               </li>
               <li>
-                <a href="#">Экшн-камеры</a>
+                <a class="nav-link" href="#">Экшн-камеры</a>
               </li>
               <li>
-                <a href="#">Фитнес-браслеты</a>
+                <a class="nav-link" href="#">Фитнес-браслеты</a>
               </li>
               <li>
-                <a href="#">Умные часы</a>
+                <a class="nav-link" href="#">Умные часы</a>
               </li>
               <li>
-                <a href="#">Квадрокоптеры</a>
+                <a class="nav-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">Доставка</a>
+            <a class="nav-link" href="#">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="nav-link" href="#">Гарантия</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="inner-page">
       <h1>Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li>
@@ -150,7 +152,7 @@
         <h2 class="visually-hidden">Список товаров</h2>
         <div class="catalog-sort">
           <h3>Сортировка:</h3>
-          <ul class="catalog-sort">
+          <ul class="catalog-sort-list">
             <li class="sort-name">
               <a href="#">По цене</a>
             </li>
@@ -160,10 +162,10 @@
             <li class="sort-name">
               <a href="#">По популярности</a>
             </li>
-            <li class="sort-to-up">
+            <li class="sort-to-up sort-direction">
               <a href="#" aria-label="По возрастанию">&#9650;</a>
             </li>
-            <li class="sort-to-down">
+            <li class="sort-to-down sort-direction">
               <a href="#" aria-label="По убыванию">&#9660;</a>
             </li>
           </ul>
@@ -174,32 +176,32 @@
             <a href="#">
               <p>Любительская селфи палка</p>
             </a>
-            <p>500 руб</p>
+            <p class="product-price">500 руб</p>
           </li>
           <li>
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <a href="#">
               <p>Профессиональная селфи-палка</p>
             </a>
-            <p>1 500 руб</p>
+            <p class="product-price">1 500 руб</p>
           </li>
           <li>
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <a href="#">
               <p>Непотопляемая селфи палка</p>
             </a>
-            <p>2 500 руб</p>
+            <p class="product-price">2 500 руб</p>
           </li>
           <li>
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <a href="#">
               <p>Селфи палка &laquo;Следуй за мной&raquo;</p>
             </a>
-            <p>4 900 руб</p>
+            <p class="product-price">4 900 руб</p>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-back">
+          <li class="pagination-back pagination-direct">
             <a href="#">Назад</a>
           </li>
           <li class="pagination-item pagintaion-item-current">
@@ -211,7 +213,7 @@
           <li class="pagination-item">
             <a href="#">3</a>
           </li>
-          <li class="pagination-back">
+          <li class="pagination-back pagination-direct">
             <a href="#">Вперед</a>
           </li>
         </ul>
@@ -219,27 +221,27 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <a href="index.html">
+        <a class="nav-link" href="index.html">
           <img src="img/logo-footer.svg" class="footer-logo" alt="DEVICE" width="163" height="36">
         </a>
         <div class="footer-links">
           <ul class="footer-login" aria-label="Блок авторизации">
             <li>
-              <a href="login.html">Войти</a>
+              <a class="nav-link" href="login.html">Войти</a>
             </li>
             <li>
-              <a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
+              <a class="nav-link" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
             </li>
             <li>
-              <a href="logout.html">Выйти</a>
+              <a class="nav-link" href="logout.html">Выйти</a>
             </li>
           </ul>
-          <ul class="header-buy" aria-label="Блок покупок">
-            <li class="header-buy-item">
-              <a href="compare.html">Сравнить</a>
+          <ul class="footer-buy" aria-label="Блок покупок">
+            <li class="footer-buy-item">
+              <a class="nav-link" href="compare.html">Сравнить</a>
             </li>
-            <li class="header-buy-item">
-              <a href="basket.html">Корзина</a>
+            <li class="footer-buy-item">
+              <a class="nav-link" href="basket.html">Корзина</a>
             </li>
           </ul>
         </div>
@@ -250,13 +252,13 @@
         </p>
         <ul class="footer-menu">
           <li>
-            <a href="#">Доставка</a>
+            <a class="nav-link" href="#">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="nav-link" href="#">Гарантия</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
         <a href="tel:+74954959595" class="footer-phone">
@@ -282,7 +284,7 @@
           </li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+          <img class="nav-link" src="img/logo-html.svg" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
         </a>
       </div>
     </footer>

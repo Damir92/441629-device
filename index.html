@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -15,63 +17,63 @@
         <div class="header-search">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-            <input id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
+            <input class="search-input" id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
             <button class="button-search" type="submit">Найти</button>
           </form>
         </div>
         <ul class="header-login">
           <li>
-            <a href="login.html">Войти</a>
+            <a class="nav-link" href="login.html">Войти</a>
           </li>
           <li>
-            <a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
+            <a class="nav-link" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
           </li>
           <li>
-            <a href="logout.html">Выйти</a>
+            <a class="nav-link" href="logout.html">Выйти</a>
           </li>
         </ul>
         <ul class="header-buy">
           <li class="header-buy-item">
-            <a href="compare.html">Сравнить</a>
+            <a class="nav-link" href="compare.html">Сравнить</a>
           </li>
           <li class="header-buy-item">
-            <a href="basket.html">Корзина</a>
+            <a class="nav-link" href="basket.html">Корзина</a>
           </li>
         </ul>
       </div>
       <nav class="main-navigation">
         <ul class="header-menu">
           <li>
-            <a href="#">Каталог товаров <span>+</span></a>
+            <a class="nav-link" href="#">Каталог товаров</a>
             <ul class="catalog-navigation">
               <li>
-                <a href="#">Виртуальная реальность</a>
+                <a class="nav-link" href="#">Виртуальная реальность</a>
               </li>
               <li>
-                <a href="catalog.html">Моноподы для селфи</a>
+                <a class="nav-link" href="catalog.html">Моноподы для селфи</a>
               </li>
               <li>
-                <a href="#">Экшн-камеры</a>
+                <a class="nav-link" href="#">Экшн-камеры</a>
               </li>
               <li>
-                <a href="#">Фитнес-браслеты</a>
+                <a class="nav-link" href="#">Фитнес-браслеты</a>
               </li>
               <li>
-                <a href="#">Умные часы</a>
+                <a class="nav-link" href="#">Умные часы</a>
               </li>
               <li>
-                <a href="#">Квадрокоптеры</a>
+                <a class="nav-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">Доставка</a>
+            <a class="nav-link" href="#">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="nav-link" href="#">Гарантия</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -80,17 +82,16 @@
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
       <div class="slider">
         <section class="slide">
-          <h2>Палка для селфи</h2>
+          <h2 class="visually-hidden">Палка для селфи</h2>
           <div class="slide-img">
             <img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
           </div>
-          <p class="slide-number">01</p>
           <div class="slider-promo">
             <b>Делай селфи, как Бен Стиллер!</b>
             <p class="slider-description">
               Самая длиная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Длина палки</th>
@@ -106,17 +107,16 @@
           </div>
         </section>
         <section class="slide">
-          <h2>Фитнес-браслет</h2>
+          <h2 class="visually-hidden">Фитнес-браслет</h2>
           <div class="slide-img">
             <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
           </div>
-          <p class="slide-number">02</p>
           <div class="slider-promo">
             <b>Худеем правильно!</b>
             <p class="slider-description">
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Без подзарядки</th>
@@ -128,17 +128,16 @@
           </div>
         </section>
         <section class="slide">
-          <h2>Квадрокоптер</h2>
+          <h2 class="visually-hidden">Квадрокоптер</h2>
           <div class="slide-img">
             <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
           </div>
-          <p class="slide-number">03</p>
           <div class="slider-promo">
             <b>Порхает как бабочка, жалит как пчела!</b>
             <p class="slider-description">
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Дальность полета</th>
@@ -153,7 +152,7 @@
         </section>
       </div>
       <section class="category">
-        <h2>Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
           <li class="category-item">
             <a href="#" class="category-link">
@@ -218,7 +217,7 @@
         </ul>
       </section>
       <section class="services">
-        <h2>Сервис</h2>
+        <h2 class="visually-hidden">Сервис</h2>
         <ul class="services-name-list">
           <li class="services-name-item">Доставка</li>
           <li class="services-name-item">Гарантия</li>
@@ -282,7 +281,7 @@
             <li class="about-item">Автотрейдинг</li>
             <li class="about-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="about.html" class="about-link">Подробнее о нас</a>
+          <a href="about.html" class="about-link button">Подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2 class="about-title">Контакты</h2>
@@ -290,7 +289,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <img src="img/map.jpg" alt="улица Строителей, 15" class="about-map" width="560" height="222">
-          <a href="write.html" class="about-link">Напишите нам</a>
+          <a href="write.html" class="about-link button">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -302,21 +301,21 @@
         <div class="footer-links">
           <ul class="footer-login" aria-label="Блок авторизации">
             <li>
-              <a href="login.html">Войти</a>
+              <a class="nav-link" href="login.html">Войти</a>
             </li>
             <li>
-              <a href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
+              <a class="nav-link" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
             </li>
             <li>
-              <a href="logout.html">Выйти</a>
+              <a class="nav-link" href="logout.html">Выйти</a>
             </li>
           </ul>
-          <ul class="header-buy" aria-label="Блок покупок">
-            <li class="header-buy-item">
-              <a href="compare.html">Сравнить</a>
+          <ul class="footer-buy" aria-label="Блок покупок">
+            <li class="footer-buy-item">
+              <a class="nav-link" href="compare.html">Сравнить</a>
             </li>
-            <li class="header-buy-item">
-              <a href="basket.html">Корзина</a>
+            <li class="footer-buy-item">
+              <a class="nav-link" href="basket.html">Корзина</a>
             </li>
           </ul>
         </div>
@@ -327,13 +326,13 @@
         </p>
         <ul class="footer-menu" aria-label="Блок сервиса">
           <li>
-            <a href="#">Доставка</a>
+            <a class="nav-link" href="#">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="nav-link" href="#">Гарантия</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
         <a class="footer-phone" href="tel:+74954959595">
@@ -341,7 +340,7 @@
         </a>
       </div>
       <div class="footer-bottom">
-        <ul class="footer-social" aria-label="Мы в социльных сетях">
+        <ul class="footer-social">
           <li class="footer-social-icon">
             <a href="#">
               Facebook
@@ -358,31 +357,31 @@
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="nav-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
         </a>
       </div>
     </footer>
-    <section class="form-window">
+    <section class="form-window modal">
       <h2 class="visually-hidden">Ваше письмо</h2>
       <form action="https://echo.htmlacademy.ru" class="write-form" method="post">
         <div class="write-form-name">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          <input class="modal-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
         </div>
         <div class="write-form-email">
           <label for="email">Ваш e-mail:</label>
-          <input type="text" name="email" id="email" placeholder="email@example.com">
+          <input class="modal-input" type="text" name="email" id="email" placeholder="email@example.com">
         </div>
         <div class="write-form-text">
           <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-input" name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="button-close" type="button">Закрыть</button>
     </section>
-    <section class="map-window">
+    <section class="map-window modal">
       <h2 class="visually-hidden">Где мы находимся</h2>
       <p>
         <img src="img/map-big.jpg" width="960" height="559" alt="Наш офис находится по адресу Москва, улица Строителей 15">
