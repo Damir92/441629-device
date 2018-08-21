@@ -1,0 +1,612 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+
+  src: local('Open Sans'),
+  url('fonts/opensans.woff2') format('woff2'),
+  url('fonts/opensans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+
+  src: local('Open Sans Light'),
+  url('fonts/opensanslight.woff2') format('woff2'),
+  url('fonts/opensanslight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  font-style: normal;
+
+  src: local('Gilroy-Light'),
+  url('fonts/gilroylight.woff2') format('woff2'),
+  url('fonts/gilroylight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-style: normal;
+
+  src: local('Gilroy-ExtraBold'),
+  url('fonts/gilroyextrabold.woff2') format('woff2'),
+  url('fonts/gilroyextrabold.woff') format('woff');
+}
+
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #464646;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  box-sizing: border-box;
+  width: 1160px;
+  margin: 22px auto 0;
+  padding: 0 60px;
+
+  background: linear-gradient(#fff 18px, rgba(240, 197, 46, .5) 18px);
+}
+
+.main-header a {
+  color: #000;
+}
+
+.search-input {
+  box-sizing: border-box;
+  min-height: 49px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.search-input::placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+.search-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+.search-input::-moz-placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+.search-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+.search-input:hover::placeholder {
+  color: rgba(0, 0, 0, .6);
+}
+
+.search-input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, .6);
+}
+
+.search-input:hover::-moz-placeholder {
+  color: rgba(0, 0, 0, .6);
+}
+
+.search-input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, .6);
+}
+
+.main-header li {
+  list-style: none;
+}
+
+.header-menu a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.catalog-navigation a {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  opacity: .6;
+}
+
+.nav-link:active {
+  opacity: .3;
+}
+
+.search-input:active,
+.search-input:focus {
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+
+.search-input:active~.button-search,
+.search-input:focus~.button-search {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 15px;
+
+  display: inline-block;
+
+  min-width: 85px;
+  min-height: 49px;
+  padding: 0;
+
+  color: #000;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+.search-input:focus~.button-search:hover,
+.search-input:focus~.button-search:focus {
+  display: inline-block;
+
+  color: #fff;
+  background-color: #000;
+}
+
+.header-search:focus~.button-search:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+
+
+/*  main block  */
+
+.slider-promo b {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+
+  letter-spacing: .5px;
+
+  color: #000;
+}
+
+.button {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+
+  display: inline-block;
+
+  min-width: 220px;
+  min-height: 40px;
+
+  text-align: center;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+
+  color: #000;
+  border: none;
+  background: linear-gradient(#fff 40%, #f0c52e 40%, #f0c52e 60%, #fff 60%);
+}
+
+.button:hover,
+.button:focus {
+  background: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, .3);
+  background: #f0c52e;
+}
+
+.slider th {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+
+  letter-spacing: .1px;
+}
+
+.slider td {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+
+  letter-spacing: .4px;
+
+  color: #000;
+}
+
+.category-list {
+  list-style: none;
+}
+
+.category-name {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: .2px;
+
+  color: #000;
+}
+
+.category-name:active {
+  opacity: .3;
+}
+
+.services-name-list {
+  list-style: none;
+}
+
+.services-name-item {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+
+  width: 160px;
+  min-height: 40px;
+
+  text-align: center;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+
+  color: #000;
+  border: none;
+  background: linear-gradient(#fff 40%, #f0c52e 40%, #f0c52e 60%, #fff 60%);
+}
+
+.services-name-item:hover,
+.services-name-item:focus {
+  background: #f0c52e;
+}
+
+.services-name-item:active {
+  color: #f7e184;
+  background: #000;
+}
+
+.services-item h3 {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+
+  letter-spacing: .5px;
+
+  color: #000;
+}
+
+.logotypes-list {
+  list-style: none;
+}
+
+.logotypes-item {
+  opacity: .2;
+
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.logotypes-item:hover,
+.logotypes-item:focus {
+  opacity: 1;
+
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.about-title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+
+  letter-spacing: .5px;
+
+  color: #000;
+}
+
+.about-link {
+  min-width: 260px;
+}
+
+.about-list {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+
+  color: #000;
+}
+
+.main-footer {
+  color: #fff;
+  background-color: #464646;
+}
+
+.main-footer a {
+  color: #fff;
+}
+
+.footer-links {
+  line-height: 36px;
+}
+
+.footer-login,
+.footer-buy,
+.footer-menu,
+.footer-social {
+  list-style: none;
+}
+
+
+
+
+
+/*  Modal window  */
+
+.modal {
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, .2);
+}
+
+.modal-input {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  padding: 17px 20px 17px;
+
+  border: none;
+  background-color: rgba(229, 229, 229, .5);
+}
+
+.modal-input:hover {
+  background-color: rgba(230, 230, 230, .8);
+}
+
+.modal-input:focus {
+  outline: 3px solid #f0c52e;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.modal-input:invalid {
+  background-color: rgba(237, 181, 181, .5);
+}
+
+.modal-input::placeholder {
+  color: rgba(70, 70, 70, .4);
+}
+
+.modal-input::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, .4);
+}
+
+.modal-input::-moz-placeholder {
+  color: rgba(70, 70, 70, .4);
+}
+
+.modal-input:-ms-input-placeholder {
+  color: rgba(70, 70, 70, .4);
+}
+
+
+
+/*   Inner page   */
+
+.inner-page h1 {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+
+  letter-spacing: .5px;
+
+  color: #000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  letter-spacing: .1px;
+
+  color: rgba(0, 0, 0, .3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, .6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, .1);
+}
+
+.breadcrumbs a,
+.breadcrumbs-current a:hover,
+.breadcrumbs-current a:focus,
+.breadcrumbs-current a:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.filters h2,
+.catalog h3 {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: 3.5px;
+
+  color: #000;
+}
+
+.filter legend {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+
+  letter-spacing: .2px;
+
+  color: #000;
+}
+
+.filter ul,
+.catalog ul {
+  list-style: none;
+}
+
+.filter label {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000;
+  letter-spacing: 0.1px;
+}
+
+.filter input[disabled] ~ label {
+  color: #a6a6a6;
+}
+
+.sort-name a {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-name a:hover,
+.sort-name a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-direction a {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.sort-direction a:hover,
+.sort-direction a:focus {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.sort-name a:active,
+.sort-direction a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-list a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000;
+  letter-spacing: 0.2px;
+}
+
+.catalog-list img:hover,
+.catalog-list img:focus {
+  opacity: 0.7;
+}
+
+.product-price {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.pagination-list li {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-list a {
+  color: #000;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item:hover a,
+.pagination-item:focus a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item:active a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagintaion-item-current a,
+.pagintaion-item-current:hover a,
+.pagintaion-item-current:focus a,
+.pagintaion-item-current:active a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-direct:hover,
+.pagination-direct:focus,
+.pagination-direct:active {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.pagination-direct:active a {
+  color: rgba(0, 0, 0, 0.3);
+}
