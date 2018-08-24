@@ -10,73 +10,77 @@
 
   <body>
     <header class="main-header">
-      <a>
-        <img src="img/logo.svg" class="header-logo" alt="DEVICE" width="164" height="36">
-      </a>
-      <div class="header-top">
-        <div class="header-search">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-            <input class="search-input" id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
-            <button class="button-search" type="submit">Найти</button>
-          </form>
-        </div>
-        <ul class="header-login">
-          <li>
-            <a class="nav-link" href="login.html">Войти</a>
-          </li>
-          <li>
-            <a class="nav-link" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
-          </li>
-          <li>
-            <a class="nav-link" href="logout.html">Выйти</a>
-          </li>
-        </ul>
-        <ul class="header-buy">
-          <li class="header-buy-item">
-            <a class="nav-link" href="compare.html">Сравнить</a>
-          </li>
-          <li class="header-buy-item">
-            <a class="nav-link" href="basket.html">Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <nav class="main-navigation">
-        <ul class="header-menu">
-          <li>
-            <a class="nav-link" href="#">Каталог товаров</a>
-            <ul class="catalog-navigation">
+      <div class="container">
+        <a>
+          <img src="img/logo.svg" class="header-logo" alt="DEVICE" width="164" height="36">
+        </a>
+        <div class="header-top">
+          <div class="header-search">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+              <input class="search-input" id="header-search" name="header-search" type="search" placeholder="Поиск по сайту">
+              <button class="button-search" type="submit">Найти</button>
+            </form>
+          </div>
+          <div class="user-container">
+            <ul class="header-login">
               <li>
-                <a class="nav-link" href="#">Виртуальная реальность</a>
+                <a class="nav-link not-login" href="login.html">Войти</a>
               </li>
               <li>
-                <a class="nav-link" href="catalog.html">Моноподы для селфи</a>
+                <a class="nav-link is-login" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Умные часы</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Квадрокоптеры</a>
+                <a class="nav-link is-login" href="logout.html">Выйти</a>
               </li>
             </ul>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Доставка</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Гарантия</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+            <ul class="header-buy">
+              <li class="header-buy-item">
+                <a class="nav-link" href="compare.html">Сравнить</a>
+              </li>
+              <li class="header-buy-item">
+                <a class="nav-link" href="basket.html">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="main-navigation">
+          <ul class="header-menu">
+            <li>
+              <a class="nav-link" href="#">Каталог товаров</a>
+              <ul class="catalog-navigation">
+                <li>
+                  <a class="nav-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Квадрокоптеры</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
@@ -217,52 +221,57 @@
         </ul>
       </section>
       <section class="services">
-        <h2 class="visually-hidden">Сервис</h2>
-        <ul class="services-name-list">
-          <li class="services-name-item">Доставка</li>
-          <li class="services-name-item">Гарантия</li>
-          <li class="services-name-item">Кредит</li>
-        </ul>
-        <div class="services-item">
-          <h3>Доставка</h3>
-          <p class="services-description">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-        </div>
-        <div class="services-item">
-          <h3>Гарантия</h3>
-          <p class="services-description">
-            Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-          </p>
-        </div>
-        <div class="services-item">
-          <h3>Кредит</h3>
-          <p class="services-description">
-            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-          </p>
+        <div class="container">
+          <h2 class="visually-hidden">Сервис</h2>
+          <ul class="services-name-list">
+            <li class="services-name-item">Доставка</li>
+            <li class="services-name-item">Гарантия</li>
+            <li class="services-name-item">Кредит</li>
+          </ul>
+          <div class="services-item services-current">
+            <h3>Доставка</h3>
+            <p class="services-description">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              <br>заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+          <div class="services-item">
+            <h3>Гарантия</h3>
+            <p class="services-description">
+              Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
+              <br> Товар, не дом, конечно же.
+            </p>
+          </div>
+          <div class="services-item">
+            <h3>Кредит</h3>
+            <p class="services-description">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              <br> условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
+          </div>
         </div>
       </section>
       <section class="logotypes">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="logotypes-list">
-          <li class="logotypes-item">
+          <li class="logotypes-item bg-logo-1">
             <a href="https://www.dji.com">
-              <img src="img/logo-1.png" alt="DJI" width="260" height="100">
+              <img src="img/logo-1-grey.png" alt="DJI" width="260" height="100">
             </a>
           </li>
-          <li class="logotypes-item">
+          <li class="logotypes-item bg-logo-2">
             <a href="http://www.sp-gadgets.com">
-              <img src="img/logo-2.png" alt="SPGadjets" width="260" height="100">
+              <img src="img/logo-2-grey.png" alt="SPGadjets" width="260" height="100">
             </a>
           </li>
-          <li class="logotypes-item">
+          <li class="logotypes-item bg-logo-3">
             <a href="https://gopro.ru">
-              <img src="img/logo-3.png" alt="GoPro" width="260" height="100">
+              <img src="img/logo-3-grey.png" alt="GoPro" width="260" height="100">
             </a>
           </li>
-          <li class="logotypes-item">
+          <li class="logotypes-item bg-logo-4">
             <a class="bg-test" href="https://www.vive.com">
-              <!-- <img src="img/logo-4.png" alt="VIVE" width="260" height="100"> -->
+              <img src="img/logo-4-grey.png" alt="VIVE" width="260" height="100">
             </a>
           </li>
         </ul>
@@ -271,10 +280,12 @@
         <section class="about">
           <h2 class="about-title">О нас</h2>
           <p class="about-description">
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            Огромный выбор гаджетов не оставит равнодушным гика,
+            <br>который есть в каждом из нас.
           </p>
           <p class="about-description">
-            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+            Мы можем доставить ваш товар в самые отдаленные точки
+            <br>России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="about-list">
             <li class="about-item">Деловые линии</li>
@@ -294,72 +305,74 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="footer-top">
-        <a>
-          <img src="img/logo-footer.svg" class="footer-logo" alt="DEVICE" width="163" height="36">
-        </a>
-        <div class="footer-links">
-          <ul class="footer-login" aria-label="Блок авторизации">
-            <li>
-              <a class="nav-link" href="login.html">Войти</a>
-            </li>
-            <li>
-              <a class="nav-link" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
-            </li>
-            <li>
-              <a class="nav-link" href="logout.html">Выйти</a>
-            </li>
-          </ul>
-          <ul class="footer-buy" aria-label="Блок покупок">
-            <li class="footer-buy-item">
-              <a class="nav-link" href="compare.html">Сравнить</a>
-            </li>
-            <li class="footer-buy-item">
-              <a class="nav-link" href="basket.html">Корзина</a>
-            </li>
-          </ul>
+      <div class="footer-container">
+        <div class="footer-top">
+          <a>
+            <img src="img/logo-footer.svg" class="footer-logo" alt="DEVICE" width="163" height="36">
+          </a>
+          <div class="footer-links">
+            <ul class="footer-login" aria-label="Блок авторизации">
+              <li>
+                <a class="nav-link not-login" href="login.html">Войти</a>
+              </li>
+              <li>
+                <a class="nav-link is-login" href="profile.html" aria-label="Ваш профиль">Валентин Петухов</a>
+              </li>
+              <li>
+                <a class="nav-link is-login" href="logout.html">Выйти</a>
+              </li>
+            </ul>
+            <ul class="footer-buy" aria-label="Блок покупок">
+              <li class="footer-buy-item">
+                <a class="nav-link" href="compare.html">Сравнить</a>
+              </li>
+              <li class="footer-buy-item">
+                <a class="nav-link" href="basket.html">Корзина</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="footer-center">
-        <p class="footer-address">
-          г. Москва, ул. Строителей, 15
-        </p>
-        <ul class="footer-menu" aria-label="Блок сервиса">
-          <li>
-            <a class="nav-link" href="#">Доставка</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Гарантия</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <a class="footer-phone" href="tel:+74954959595">
-          Тел.: +7(495)495-95-95
-        </a>
-      </div>
-      <div class="footer-bottom">
-        <ul class="footer-social">
-          <li class="footer-social-icon">
-            <a href="#">
-              Facebook
-            </a>
-          </li>
-          <li class="footer-social-icon">
-            <a href="#">
-              Instagram
-            </a>
-          </li>
-          <li class="footer-social-icon">
-            <a href="#">
-              Twitter
-            </a>
-          </li>
-        </ul>
-        <a class="nav-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
-        </a>
+        <div class="footer-center">
+          <p class="footer-address">
+            г. Москва, ул. Строителей, 15
+          </p>
+          <ul class="footer-menu" aria-label="Блок сервиса">
+            <li>
+              <a class="nav-link" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="footer-phone" href="tel:+74954959595">
+            Тел.: +7(495)495-95-95
+          </a>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-social">
+            <li class="footer-social-icon">
+              <a href="#">
+                Facebook
+              </a>
+            </li>
+            <li class="footer-social-icon">
+              <a href="#">
+                Instagram
+              </a>
+            </li>
+            <li class="footer-social-icon">
+              <a href="#">
+                Twitter
+              </a>
+            </li>
+          </ul>
+          <a class="nav-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+          </a>
+        </div>
       </div>
     </footer>
     <section class="form-window modal">
