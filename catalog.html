@@ -39,7 +39,7 @@
               <a class="nav-link nav-link-compare" href="compare.html">Сравнить</a>
             </li>
             <li class="header-buy-item">
-              <a class="nav-link nav-link-busket" href="basket.html">Корзина</a>
+              <a class="nav-link nav-link-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
         </div>
@@ -105,12 +105,19 @@
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-price">
                 <legend>Стоимость</legend>
+                <div class="price-controls">
+                  <div class="price-scale">
+                    <div class="price-bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
                 <div class="price-input">
-                  <label class="price-label">
+                  <label class="price-label min-price">
                     от
                     <input class="input-range price-from" type="number" value="0" min="0" max="5000" step="100" name="price-from">
                   </label>
-                  <label class="price-label">
+                  <label class="price-label max-price">
                     до
                     <input class="input-range price-to" type="number" value="5000" min="0" max="5000" step="100" name="price-to">
                   </label>
@@ -279,7 +286,7 @@
               <a class="nav-link-footer nav-link-compare" href="compare.html">Сравнить</a>
             </li>
             <li class="footer-buy-item">
-              <a class="nav-link-footer nav-link-busket" href="basket.html">Корзина</a>
+              <a class="nav-link-footer nav-link-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
         </div>
