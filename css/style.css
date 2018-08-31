@@ -190,7 +190,7 @@ a {
 .button-search:focus,
 .button-search:hover {
   display: inline-block;
-  min-width: 85px;
+  width: 85px;
   padding: 16px 0 15px;
 
   font-weight: 300;
@@ -210,13 +210,13 @@ a {
   color: #ffffff;
 
   background-color: #000000;
+  outline: none;
 }
 
 .button-search:active {
   display: inline-block;
   min-width: 85px;
-  height: 48px;
-  padding: 0;
+  padding: 16px 0 15px;
 
   font-weight: 300;
   line-height: 15px;
@@ -333,6 +333,7 @@ a {
 
 .header-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
 }
@@ -879,6 +880,7 @@ a {
 
 .logotypes-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -1142,6 +1144,7 @@ a {
 
 .footer-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 430px;
   margin: 0;
@@ -1203,6 +1206,7 @@ a {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
@@ -1269,13 +1273,33 @@ a {
 /*  Modal window  */
 
 .modal {
-  position: relative;
+  position: fixed;
+  z-index: 20;
 
   box-sizing: border-box;
   width: 960px;
   margin: 0 auto;
 
+  background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.form-window {
+  top: 120px;
+  left: 50%;
+
+  display: none;
+  margin-left: -480px;
+}
+
+.map-window {
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  height: 559px;
+  margin-top: -280px;
+  margin-left: -480px;
 }
 
 .write-form {
@@ -1361,6 +1385,7 @@ a {
   background-color: transparent;
   background-image: url("../img/modal-close.svg");
   border: none;
+  outline: none;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -1370,6 +1395,9 @@ a {
   opacity: 1;
 }
 
+.button-close:active {
+  opacity: 0.3;
+}
 
 
 /*   Inner page   */
@@ -1489,9 +1517,7 @@ a {
 
 .filter {
   width: 200px;
-  padding-top: 81px;
-  padding-right: 70px;
-  padding-left: 60px;
+  padding: 81px 70px 40px 60px;
 }
 
 .filter-price,
