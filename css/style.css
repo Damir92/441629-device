@@ -75,6 +75,13 @@ a {
   padding-left: 0;
 }
 
+.main-logo-link {
+  display: block;
+  width: 164px;
+  height: 36px;
+  margin-bottom: 9px;
+}
+
 .main-header {
   min-width: 1200px;
 }
@@ -168,17 +175,10 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-input:-webkit-autofill {
-  background-color: transparent !important;
-}
-/*Изменение цвета фона при автозаполнении в настройках клиента исп-ся с important*/
-
 .button-search {
-  position: absolute;
-  top: 2px;
-  right: -1px;
-
   display: none;
+  margin-top: 3px;
+  margin-left: -17px;
 
   outline: none;
 }
@@ -200,11 +200,11 @@ a {
 .button-search:hover {
   display: inline-block;
   width: 85px;
-  padding: 16px 0 15px;
+  padding: 15px 0;
 
   font-weight: 300;
   line-height: 15px;
-  vertical-align: middle;
+  vertical-align: top;
   color: #000000;
 
   background-color: transparent;
@@ -213,9 +213,6 @@ a {
 
 .search-input:focus ~ .button-search:hover,
 .search-input:focus ~ .button-search:focus {
-  display: inline-block;
-
-  vertical-align: middle;
   color: #ffffff;
 
   background-color: #000000;
@@ -223,17 +220,9 @@ a {
 }
 
 .search-container:active .button-search:active {
-  display: inline-block;
-  min-width: 85px;
-  padding: 16px 0 15px;
-
-  font-weight: 300;
-  line-height: 15px;
-  vertical-align: middle;
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #000000;
-  border: 2px solid #000000;
   outline: none;
 }
 
@@ -1121,7 +1110,7 @@ a {
 }
 
 .footer-logo {
-  padding-top: 12px;
+  padding-top: 4px;
 }
 
 .footer-links {
@@ -1341,10 +1330,20 @@ a {
 
 @keyframes bounce {
   0% {
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
 
+  40% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
   100% {
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }
@@ -1352,7 +1351,7 @@ a {
 @keyframes shake {
   0%,
   100% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   10%,
@@ -1360,46 +1359,34 @@ a {
   50%,
   70%,
   90% {
-    transform: rotate(2deg);
+    transform: translate(-50%, -50%) rotate(2deg);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: rotate(-2deg);
+    transform: translate(-50%, -50%) rotate(-2deg);
   }
 }
 
 .modal {
   position: fixed;
+  top: 50%;
+  left: 50%;
   z-index: 20;
 
   box-sizing: border-box;
   width: 960px;
-  margin: 0 auto;
 
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
-}
-
-.form-window {
-  top: 50%;
-  left: 50%;
-
-  display: none;
-  margin-top: -300px;
-  margin-left: -480px;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
 }
 
 .map-window {
-  top: 50%;
-  left: 50%;
-
-  display: none;
   height: 559px;
-
-  transform: translate(-50%, -50%);
 }
 
 .map-window iframe {
@@ -1419,7 +1406,8 @@ a {
 }
 
 .modal-show {
-  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 
   animation: bounce 0.6s;
 }
@@ -1542,6 +1530,11 @@ a {
   margin: 0 auto 44px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.logo-link {
+  display: block;
+  width: 164px;
 }
 
 .logo-link:hover,
