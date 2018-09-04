@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -88,12 +88,15 @@
     <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
     <div class="slider-container">
       <div class="slider">
+        <input class="visually-hidden slider-radio-1" type="radio" id="slider-1" name="slider-toggle" checked>
+        <input class="visually-hidden slider-radio-2" type="radio" id="slider-2" name="slider-toggle">
+        <input class="visually-hidden slider-radio-3" type="radio" id="slider-3" name="slider-toggle">
         <div class="slider-controls">
-          <div class="slider-toggle slider-toggle-active" tabindex="0"></div>
-          <div class="slider-toggle" tabindex="0"></div>
-          <div class="slider-toggle" tabindex="0"></div>
+          <label class="slider-toggle slider-label-1 slider-toggle-active" for="slider-1">Первый</label>
+          <label class="slider-toggle slider-label-2" for="slider-2">Второй</label>
+          <label class="slider-toggle slider-label-3" for="slider-3">Третий</label>
         </div>
-        <section class="slide slide-active">
+        <section class="slide slide-1">
           <h2 class="visually-hidden">Палка для селфи</h2>
           <div class="slide-img">
             <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
@@ -123,7 +126,7 @@
             </table>
           </div>
         </section>
-        <section class="slide">
+        <section class="slide slide-2">
           <h2 class="visually-hidden">Фитнес-браслет</h2>
           <div class="slide-img">
             <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
@@ -149,7 +152,7 @@
             </table>
           </div>
         </section>
-        <section class="slide">
+        <section class="slide slide-3">
           <h2 class="visually-hidden">Квадрокоптер</h2>
           <div class="slide-img">
             <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -218,12 +221,21 @@
     <section class="services">
       <div class="container">
         <h2 class="visually-hidden">Сервис</h2>
-        <ul class="services-name-list">
-          <li class="services-name-item services-name-active" tabindex="0">Доставка</li>
-          <li class="services-name-item" tabindex="0">Гарантия</li>
-          <li class="services-name-item" tabindex="0">Кредит</li>
-        </ul>
-        <div class="services-item services-delivery services-current">
+        <input class="visually-hidden services-radio-1" type="radio" id="service-1" name="services-toggle" checked>
+        <input class="visually-hidden services-radio-2" type="radio" id="service-2" name="services-toggle">
+        <input class="visually-hidden services-radio-3" type="radio" id="service-3" name="services-toggle">
+        <div class="services-name-controls">
+          <label class="services-name-toggle services-name-1" for="service-1">
+            Доставка
+          </label>
+          <label class="services-name-toggle services-name-2" for="service-2">
+            Гарантия
+          </label>
+          <label class="services-name-toggle services-name-3" for="service-3">
+            Кредит
+          </label>
+        </div>
+        <div class="services-item services-delivery">
           <h3 class="services-title">Доставка</h3>
           <p class="services-description">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
@@ -295,7 +307,7 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <img class="about-map" src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15">
-        <a class="about-link button" href="write.html">Напишите нам</a>
+        <a class="about-link button write-us-link" href="write.html">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -379,7 +391,7 @@
       </div>
       <div class="write-form-email">
         <label for="email">Ваш e-mail:</label>
-        <input class="modal-input" id="email" type="text" name="email" placeholder="email@example.com">
+        <input class="modal-input" id="email" type="email" name="email" placeholder="email@example.com">
       </div>
       <div class="write-form-text">
         <label for="text">Текст письма:</label>
@@ -392,10 +404,15 @@
   <section class="map-window modal">
     <h2 class="visually-hidden">Где мы находимся</h2>
     <div>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBBUBIRnWC" width="960" height="559" frameborder="0" allowfullscreen="true"></iframe>
       <img src="img/map-big.jpg" width="960" height="559" alt="Наш офис находится по адресу Москва, улица Строителей 15">
     </div>
     <button class="button-close" type="button">Закрыть</button>
   </section>
+
+  <script src="js/message-popup.js"></script>
+  <script src="js/map-popup.js"></script>
+
 </body>
 
 </html>

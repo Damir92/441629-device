@@ -171,6 +171,7 @@ a {
 .search-input:-webkit-autofill {
   background-color: transparent !important;
 }
+/*Изменение цвета фона при автозаполнении в настройках клиента исп-ся с important*/
 
 .button-search {
   position: absolute;
@@ -178,6 +179,7 @@ a {
   right: -1px;
 
   display: none;
+
   outline: none;
 }
 
@@ -185,8 +187,9 @@ a {
 .search-container:focus .search-input,
 .search-input:active,
 .search-input:focus {
-  border-bottom: 2px solid #000000;
   padding: 10px 39px 8px;
+
+  border-bottom: 2px solid #000000;
   outline: none;
 }
 
@@ -371,8 +374,9 @@ a {
 }
 
 .catalog-navigation {
-  display: none;
   z-index: 20;
+
+  display: none;
 }
 
 .header-catalog {
@@ -448,6 +452,7 @@ a {
 
 .slider {
   position: relative;
+
   box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
@@ -462,32 +467,42 @@ a {
   position: absolute;
   top: 318px;
   right: 72px;
+
   display: flex;
 }
 
 .slider-toggle {
-  margin: 10px 11px 10px 10px;
+  position: relative;
+  z-index: 10;
+
   width: 10px;
   height: 10px;
+  margin: 10px 11px 10px 10px;
+
+  font-size: 0;
+
   border: 1px solid #000000;
   border-radius: 50%;
-  position: relative;
   cursor: pointer;
 }
 
-.slider-toggle-active::after {
+.slider-radio-1:checked ~ .slider-controls .slider-label-1::after,
+.slider-radio-2:checked ~ .slider-controls .slider-label-2::after,
+.slider-radio-3:checked ~ .slider-controls .slider-label-3::after {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 2px;
   top: 3px;
   left: 3px;
+
+  width: 2px;
+  height: 2px;
+
   border: 1px solid #000000;
   border-radius: 50%;
 }
 
 .slide {
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 
@@ -500,11 +515,13 @@ a {
 }
 
 .slide:nth-of-type(3) {
-  margin-bottom: 109px;
+  margin-bottom: 108px;
 }
 
-.slide:not(.slide-active) {
-  display: none;
+.slider-radio-1:checked ~ .slide-1,
+.slider-radio-2:checked ~ .slide-2,
+.slider-radio-3:checked ~ .slide-3 {
+  display: flex;
 }
 
 .slide-img,
@@ -640,8 +657,8 @@ a {
 }
 
 .button {
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
   width: 220px;
   min-height: 40px;
   padding-left: 2px;
@@ -796,17 +813,16 @@ a {
   padding: 0 20px;
 }
 
-.services-name-list {
-  width: 280px;
+.services-name-controls {
+  width: 279px;
   margin: 0;
   padding: 80px 0 45px;
-
-  list-style: none;
 
   border-right: 7px solid #000000;
 }
 
-.services-name-item {
+.services-name-toggle {
+  display: block;
   width: 156px;
   min-height: 40px;
   margin: 0 0 25px;
@@ -827,33 +843,42 @@ a {
   border: none;
 }
 
-.services-name-item:hover,
-.services-name-item:focus {
+.services-name-toggle:hover,
+.services-name-toggle:focus {
   background: #f0c52e;
   outline: none;
 }
 
-.services-name-item:active,
-.services-name-active,
-.services-name-active:hover,
-.services-name-active:focus {
+.services-name-toggle:active {
   padding-right: 119px;
 
   color: #f7e184;
 
   background: #000000;
-  outline: none;
+}
+
+.services-radio-1:checked ~ .services-name-controls .services-name-1,
+.services-radio-2:checked ~ .services-name-controls .services-name-2,
+.services-radio-3:checked ~ .services-name-controls .services-name-3 {
+  padding-right: 119px;
+
+  color: #f7e184;
+
+  background: #000000;
 }
 
 .services-item {
   position: relative;
 
+  display: none;
   width: 760px;
   margin-left: 115px;
 }
 
-.services-item:not(.services-current) {
-  display: none;
+.services-radio-1:checked ~ .services-delivery,
+.services-radio-2:checked ~ .services-warranty,
+.services-radio-3:checked ~ .services-credit {
+  display: block;
 }
 
 .services-title {
@@ -1314,6 +1339,38 @@ a {
 
 /*  Modal window  */
 
+@keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(-2deg);
+  }
+}
+
 .modal {
   position: fixed;
   z-index: 20;
@@ -1329,21 +1386,46 @@ a {
 .form-window {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   display: none;
+  margin-top: -300px;
   margin-left: -480px;
 }
 
 .map-window {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   display: none;
   height: 559px;
-  margin-top: -280px;
-  margin-left: -480px;
+
+  transform: translate(-50%, -50%);
+}
+
+.map-window iframe {
+  position: relative;
+  z-index: 20;
+
+  border: none;
+}
+
+.map-window img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  margin: 0;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .write-form {
@@ -1418,6 +1500,7 @@ a {
   position: absolute;
   top: 22px;
   right: 22px;
+  z-index: 20;
 
   width: 55px;
   height: 55px;
@@ -1625,6 +1708,7 @@ a {
 
 .range-toggle-min {
   left: 0;
+
   margin-left: -6px;
 }
 
