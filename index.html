@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -404,14 +405,12 @@
   <section class="map-window modal">
     <h2 class="visually-hidden">Где мы находимся</h2>
     <div>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBBUBIRnWC" width="960" height="559" frameborder="0" allowfullscreen="true"></iframe>
       <img src="img/map-big.jpg" width="960" height="559" alt="Наш офис находится по адресу Москва, улица Строителей 15">
+      <div class="yandexmap" id="map"></div>
     </div>
     <button class="button-close" type="button">Закрыть</button>
   </section>
-
-  <script src="js/popup.js"></script>
-
+  <script src="js/popup.min.js"></script>
 </body>
 
 </html>

@@ -17,6 +17,24 @@ var mapLink = document.querySelector(".about-map");
 var mapPopup = document.querySelector(".map-window");
 var mapClose = mapPopup.querySelector(".button-close");
 
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [55.687128, 37.529821],
+    zoom: 16
+  });
+
+  var myPlacemark = new ymaps.Placemark([55.687128, 37.529821], {
+    hintContent: "Мы находимся здесь",
+    balloonContent: "улица Строителей, 15"
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "img/google_maps_pin.svg",
+    iconImageSize: [50, 40]
+  });
+
+  myMap.geoObjects.add(myPlacemark);
+}
 
 try {
   storageName = localStorage.getItem("yourName");

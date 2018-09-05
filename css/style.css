@@ -118,6 +118,11 @@ a {
   margin-top: 5px;
 }
 
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .search-form::before {
   content: "";
   position: absolute;
@@ -132,7 +137,7 @@ a {
 }
 
 .search-input {
-  width: 370px;
+  width: 356px;
   min-height: 52px;
   padding: 10px 39px 10px;
 
@@ -176,18 +181,25 @@ a {
 }
 
 .button-search {
-  display: none;
+  display: inline-block;
+  opacity: 0;
   margin-top: 3px;
-  margin-left: -17px;
+  width: 85px;
+  padding: 15px 0;
 
+  font-weight: 300;
+  line-height: 15px;
+  vertical-align: top;
   outline: none;
+
+  border: 2px solid #000000;
 }
 
 .search-container:active .search-input,
 .search-container:focus .search-input,
 .search-input:active,
 .search-input:focus {
-  padding: 10px 39px 8px;
+  padding: 10px 19px 8px 39px;
 
   border-bottom: 2px solid #000000;
   outline: none;
@@ -196,30 +208,29 @@ a {
 .search-container:active .button-search,
 .search-input:active + .button-search,
 .search-input:focus + .button-search,
-.button-search:focus,
-.button-search:hover {
-  display: inline-block;
-  width: 85px;
-  padding: 15px 0;
-
-  font-weight: 300;
-  line-height: 15px;
-  vertical-align: top;
+.button-search:focus {
+  opacity: 1;
   color: #000000;
 
   background-color: transparent;
-  border: 2px solid #000000;
 }
 
 .search-input:focus ~ .button-search:hover,
 .search-input:focus ~ .button-search:focus {
   color: #ffffff;
-
+  opacity: 1;
   background-color: #000000;
   outline: none;
 }
 
 .search-container:active .button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #000000;
+  outline: none;
+}
+
+.button-search:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #000000;
@@ -1396,11 +1407,15 @@ a {
   border: none;
 }
 
+.yandexmap {
+  height: 559px;
+  width: 960px;
+}
+
 .map-window img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 15;
 
   margin: 0;
 }
