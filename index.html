@@ -89,15 +89,12 @@
     <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
     <div class="slider-container">
       <div class="slider">
-        <input class="visually-hidden slider-radio-1" type="radio" id="slider-1" name="slider-toggle" checked>
-        <input class="visually-hidden slider-radio-2" type="radio" id="slider-2" name="slider-toggle">
-        <input class="visually-hidden slider-radio-3" type="radio" id="slider-3" name="slider-toggle">
         <div class="slider-controls">
-          <label class="slider-toggle slider-label-1 slider-toggle-active" for="slider-1">Первый</label>
-          <label class="slider-toggle slider-label-2" for="slider-2">Второй</label>
-          <label class="slider-toggle slider-label-3" for="slider-3">Третий</label>
+          <button class="slider-toggle slider-toggle-active" type="button">Первый</button>
+          <button class="slider-toggle" type="button">Второй</button>
+          <button class="slider-toggle" type="button">Третий</button>
         </div>
-        <section class="slide slide-1">
+        <section class="slide slide-1 slide-active">
           <h2 class="visually-hidden">Палка для селфи</h2>
           <div class="slide-img">
             <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
@@ -222,21 +219,18 @@
     <section class="services">
       <div class="container">
         <h2 class="visually-hidden">Сервис</h2>
-        <input class="visually-hidden services-radio-1" type="radio" id="service-1" name="services-toggle" checked>
-        <input class="visually-hidden services-radio-2" type="radio" id="service-2" name="services-toggle">
-        <input class="visually-hidden services-radio-3" type="radio" id="service-3" name="services-toggle">
-        <div class="services-name-controls">
-          <label class="services-name-toggle services-name-1" for="service-1">
+        <div class="services-controls">
+          <button class="services-toggle services-toggle-active" type="button">
             Доставка
-          </label>
-          <label class="services-name-toggle services-name-2" for="service-2">
+          </button>
+          <button class="services-toggle" type="button">
             Гарантия
-          </label>
-          <label class="services-name-toggle services-name-3" for="service-3">
+          </button>
+          <button class="services-toggle" type="button">
             Кредит
-          </label>
+          </button>
         </div>
-        <div class="services-item services-delivery">
+        <div class="services-item services-delivery services-item-active">
           <h3 class="services-title">Доставка</h3>
           <p class="services-description">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
@@ -315,7 +309,7 @@
   <footer class="main-footer">
     <div class="footer-container">
       <div class="footer-top">
-        <a>
+        <a class="footer-logo-link">
           <img class="footer-logo" src="img/logo-footer.svg" width="163" height="36" alt="DEVICE">
         </a>
         <div class="footer-links">

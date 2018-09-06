@@ -18,6 +18,7 @@ var mapPopup = document.querySelector(".map-window");
 var mapClose = mapPopup.querySelector(".button-close");
 
 ymaps.ready(init);
+
 function init() {
   var myMap = new ymaps.Map("map", {
     center: [55.687128, 37.529821],
@@ -110,5 +111,78 @@ window.addEventListener("keydown", function(evt) {
     if (mapPopup.classList.contains("modal-show")) {
       mapPopup.classList.remove("modal-show");
     }
+  }
+});
+
+var slidesToggle = document.querySelectorAll(".slider-toggle");
+var slides = document.querySelectorAll(".slide");
+var servicesToggle = document.querySelectorAll(".services-toggle");
+var services = document.querySelectorAll(".services-item");
+var currentSlide = 0;
+var currentService = 0;
+
+slidesToggle[0].addEventListener("click", function(evt) {
+  if (!slidesToggle[0].classList.contains("slider-toggle-active")) {
+    evt.preventDefault();
+    slidesToggle[currentSlide].classList.remove("slider-toggle-active");
+    slides[currentSlide].classList.remove("slide-active");
+    currentSlide = 0;
+    slidesToggle[currentSlide].classList.add("slider-toggle-active");
+    slides[currentSlide].classList.add("slide-active");
+  }
+});
+
+slidesToggle[1].addEventListener("click", function(evt) {
+  if (!slidesToggle[1].classList.contains("slider-toggle-active")) {
+    evt.preventDefault();
+    slidesToggle[currentSlide].classList.remove("slider-toggle-active");
+    slides[currentSlide].classList.remove("slide-active");
+    currentSlide = 1;
+    slidesToggle[currentSlide].classList.add("slider-toggle-active");
+    slides[currentSlide].classList.add("slide-active");
+  }
+});
+
+slidesToggle[2].addEventListener("click", function(evt) {
+  if (!slidesToggle[2].classList.contains("slider-toggle-active")) {
+    evt.preventDefault();
+    slidesToggle[currentSlide].classList.remove("slider-toggle-active");
+    slides[currentSlide].classList.remove("slide-active");
+    currentSlide = 2;
+    slidesToggle[currentSlide].classList.add("slider-toggle-active");
+    slides[currentSlide].classList.add("slide-active");
+  }
+});
+
+servicesToggle[0].addEventListener("click", function(evt) {
+  if (!servicesToggle[0].classList.contains("services-toggle-active")) {
+    evt.preventDefault();
+    servicesToggle[currentService].classList.remove("services-toggle-active");
+    services[currentService].classList.remove("services-item-active");
+    currentService = 0;
+    servicesToggle[currentService].classList.add("services-toggle-active");
+    services[currentService].classList.add("services-item-active");
+  }
+});
+
+servicesToggle[1].addEventListener("click", function(evt) {
+  if (!servicesToggle[1].classList.contains("services-toggle-active")) {
+    evt.preventDefault();
+    servicesToggle[currentService].classList.remove("services-toggle-active");
+    services[currentService].classList.remove("services-item-active");
+    currentService = 1;
+    servicesToggle[currentService].classList.add("services-toggle-active");
+    services[currentService].classList.add("services-item-active");
+  }
+});
+
+servicesToggle[2].addEventListener("click", function(evt) {
+  if (!servicesToggle[2].classList.contains("services-toggle-active")) {
+    evt.preventDefault();
+    servicesToggle[currentService].classList.remove("services-toggle-active");
+    services[currentService].classList.remove("services-item-active");
+    currentService = 2;
+    servicesToggle[currentService].classList.add("services-toggle-active");
+    services[currentService].classList.add("services-item-active");
   }
 });
