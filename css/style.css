@@ -58,10 +58,10 @@ body {
   margin: 0;
   padding: 0;
 
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
 
   background-color: #ffffff;
@@ -363,10 +363,10 @@ a {
 }
 
 .header-menu a {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
@@ -573,10 +573,10 @@ a {
 .slider-promo::after {
   position: absolute;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 180px;
   line-height: 180px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #ffffff;
   letter-spacing: 1.8px;
 }
@@ -604,10 +604,10 @@ a {
 
   margin-bottom: 19px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.6px;
 }
@@ -645,10 +645,10 @@ a {
   width: 160px;
   padding: 0;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", sans-serif;
   text-align: left;
   color: #000000;
 }
@@ -664,12 +664,12 @@ a {
   width: 220px;
   min-height: 40px;
   padding: 8px 0 8px 2px;
+  /*padding-left: 2px;*/
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  /*padding-left: 2px;*/
-  font-family: "Gilroy", "Arial", sans-serif;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -721,10 +721,10 @@ a {
   display: block;
   padding-top: 191px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.2px;
 }
@@ -832,10 +832,10 @@ a {
   margin: 0 0 24px;
   padding: 8px 0 8px 3px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -883,10 +883,10 @@ a {
   margin: 0;
   margin-top: 74px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 1px;
 }
@@ -1019,10 +1019,10 @@ a {
 
   margin: 54px 0 28px -2px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.5px;
 }
@@ -1067,10 +1067,10 @@ a {
   padding-left: 36px;
 
   list-style: none;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1220,10 +1220,10 @@ a {
 }
 
 .footer-menu a {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
@@ -1439,10 +1439,10 @@ a {
 .write-form label {
   display: block;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 .write-form * {
@@ -1564,10 +1564,10 @@ a {
   margin-bottom: 21px;
   padding-left: 60px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.5px;
 }
@@ -1733,10 +1733,10 @@ a {
   display: inline-block;
   width: 90px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -1774,10 +1774,10 @@ a {
   min-height: 70px;
   margin: 0;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 70px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.5px;
@@ -1790,10 +1790,10 @@ a {
 }
 
 .filter legend {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.2px;
 }
@@ -2005,10 +2005,10 @@ a {
 }
 
 .catalog-list a {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.2px;
 }
@@ -2030,10 +2030,10 @@ a {
   width: 60px;
   height: 60px;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 60px;
-  font-family: "Gilroy", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
 
@@ -2066,10 +2066,10 @@ a {
 
   display: none;
 
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  font-family: "Open Sans", "Arial", sans-serif;
   letter-spacing: 0.1px;
 
   opacity: 0.5;
@@ -2126,10 +2126,10 @@ a {
 .product-price {
   margin: 0;
 
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.2px;
 }
 
@@ -2144,10 +2144,10 @@ a {
 }
 
 .pagination-list a {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 70px;
-  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.5px;
