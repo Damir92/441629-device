@@ -351,11 +351,11 @@ a {
 }
 
 .header-menu > li:nth-child(2) {
-  min-width: 160px;
+  min-width: 159px;
 }
 
 .header-menu > li:nth-child(3) {
-  min-width: 220px;
+  min-width: 221px;
 }
 
 .header-menu > li:last-child {
@@ -609,14 +609,14 @@ a {
   font-size: 47px;
   line-height: 56px;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .slider-description {
   margin: 0;
   padding-bottom: 43px;
 
-  letter-spacing: 0.2px;
+  letter-spacing: 0.01em;
 }
 
 .slider-table {
@@ -626,18 +626,19 @@ a {
 
   border-collapse: collapse;
   border-spacing: 0;
+  letter-spacing: 0.1px;
 }
 
 .slider-table-head {
   box-sizing: border-box;
   width: 160px;
   padding: 0;
+  padding-top: 7px;
 
   font-weight: 300;
   font-size: 13px;
-  line-height: 35px;
+  line-height: 20px;
   text-align: left;
-  letter-spacing: 0.1px;
 }
 
 .slider-table-data {
@@ -650,7 +651,6 @@ a {
   line-height: 48px;
   text-align: left;
   color: #000000;
-  letter-spacing: 0.4px;
 }
 
 .slider-table-head:nth-child(2),
@@ -663,12 +663,13 @@ a {
   box-sizing: border-box;
   width: 220px;
   min-height: 40px;
-  padding-left: 2px;
+  padding: 8px 0 8px 2px;
+  /*padding-left: 2px;*/
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 24px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -697,7 +698,7 @@ a {
 
 .category {
   width: 1160px;
-  margin: 0 auto 82px;
+  margin: 0 auto 81px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -718,7 +719,7 @@ a {
   position: relative;
 
   display: block;
-  margin-top: 190px;
+  margin-top: 191px;
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -731,7 +732,7 @@ a {
 .category-name::after {
   content: "";
   position: absolute;
-  top: -193px;
+  top: -194px;
   left: 0;
 
   width: 160px;
@@ -743,7 +744,7 @@ a {
 .category-name::before {
   content: "";
   position: absolute;
-  top: -192px;
+  top: -193px;
   left: 0;
 
   width: 160px;
@@ -870,7 +871,7 @@ a {
 
   display: none;
   width: 760px;
-  margin-left: 115px;
+  margin-left: 117px;
 }
 
 .services-item-active {
@@ -886,7 +887,7 @@ a {
   font-size: 47px;
   line-height: 48px;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .services-description {
@@ -1040,11 +1041,13 @@ a {
 .about-description {
   margin-bottom: 15px;
 
-  letter-spacing: 0;
+  letter-spacing: 0.1px;
 }
 
 .about-description-delivery {
   margin-bottom: 50px;
+
+  letter-spacing: -0.01em;
 }
 
 .about-description-office {
@@ -1212,7 +1215,7 @@ a {
   width: 430px;
   margin: 0;
   padding-top: 15px;
-  padding-left: 0;
+  padding-left: 2px;
 }
 
 .footer-menu a {
@@ -1235,9 +1238,11 @@ a {
 
 .footer-address {
   width: 240px;
-  margin: 0;
+  margin: 0 50px 0 -2px;
   margin-right: 50px;
   padding-top: 8px;
+
+  letter-spacing: 0;
 }
 
 .footer-phone {
@@ -1717,7 +1722,7 @@ a {
 }
 
 .range-toggle-max {
-  left: 55%;
+  left: calc(55% - 3px);
 }
 
 .range-toggle:hover,
@@ -1984,6 +1989,7 @@ a {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.sort-active a,
 .sort-name a:active,
 .sort-direction a:active {
   color: rgba(0, 0, 0, 1);
