@@ -1,5 +1,4 @@
 var link = document.querySelector(".write-us-link");
-
 var popup = document.querySelector(".form-window");
 var close = popup.querySelector(".button-close");
 
@@ -11,9 +10,7 @@ var message = popup.querySelector("#text");
 var isStorageSupport = true;
 var storage = "";
 
-
 var mapLink = document.querySelector(".about-map");
-
 var mapPopup = document.querySelector(".map-window");
 var mapClose = mapPopup.querySelector(".button-close");
 
@@ -82,8 +79,6 @@ form.addEventListener("submit", function(evt) {
     }
   }
 });
-
-
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {

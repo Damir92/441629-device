@@ -38,8 +38,6 @@
         url("fonts/gilroyextrabold.woff") format("woff");
 }
 
-
-
 .visually-hidden {
   position: absolute;
 
@@ -440,8 +438,6 @@ a {
   letter-spacing: 0.2px;
 }
 
-
-
 /*  main block  */
 
 .slider-container {
@@ -664,7 +660,6 @@ a {
   width: 220px;
   min-height: 40px;
   padding: 8px 0 8px 2px;
-  /*padding-left: 2px;*/
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -727,6 +722,12 @@ a {
   line-height: 24px;
   color: #000000;
   letter-spacing: 0.2px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .category-name {
+    letter-spacing: 0.1px;
+  }
 }
 
 .category-name::after {
@@ -895,7 +896,7 @@ a {
   width: 440px;
   margin-top: 31px;
 
-  letter-spacing: 0.2px;
+  letter-spacing: 0.25px;
 }
 
 .services-item::after {
@@ -1334,7 +1335,6 @@ a {
   opacity: 0.3;
 }
 
-
 /*  Modal window  */
 
 @keyframes bounce {
@@ -1527,7 +1527,6 @@ a {
   opacity: 0.3;
 }
 
-
 /*   Inner page   */
 
 .inner-page ul {
@@ -1543,6 +1542,12 @@ a {
   margin: 0 auto 44px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.inner-logo-link {
+  height: 36px;
+  margin-bottom: 7px;
+  padding-top: 2px;
 }
 
 .logo-link {
@@ -1569,7 +1574,7 @@ a {
   font-size: 47px;
   line-height: 48px;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .inner-page .breadcrumbs {
@@ -1581,14 +1586,16 @@ a {
 }
 
 .breadcrumbs li {
-  padding-right: 32px;
+  padding-right: 37px;
 }
 
 .breadcrumbs a {
   position: relative;
 
+  font-size: 14px;
+  line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
-  letter-spacing: 0.1px;
+  letter-spacing: 0.01em;
 }
 
 .breadcrumbs a:hover,
@@ -1610,8 +1617,8 @@ a {
 .breadcrumbs-link:after {
   content: url("../img/nav-arrow.svg");
   position: absolute;
-  top: -2px;
-  right: -17px;
+  top: -3px;
+  right: -20px;
 
   font-size: 14px;
   line-height: 24px;
@@ -1620,9 +1627,9 @@ a {
 .bg-inner-container {
   min-width: 1200px;
 
-  background-image: -webkit-linear-gradient(left, #eeeeee 25%, #ffffff 25%);
-  background-image:      -o-linear-gradient(left, #eeeeee 25%, #ffffff 25%);
-  background-image:         linear-gradient(to right, #eeeeee 25%, #ffffff 25%);
+  background-image: -webkit-linear-gradient(left, #eeeeee 30%, #ffffff 30%);
+  background-image:      -o-linear-gradient(left, #eeeeee 30%, #ffffff 30%);
+  background-image:         linear-gradient(to right, #eeeeee 30%, #ffffff 30%);
 }
 
 .inner-container {
@@ -1650,7 +1657,7 @@ a {
 
 .filter {
   width: 200px;
-  padding: 81px 69px 40px 60px;
+  padding: 69px 69px 40px 60px;
 }
 
 .filter-price,
@@ -1664,18 +1671,12 @@ a {
   border: none;
 }
 
-.filter-price::before,
-.filter-color::before,
-.filter-bluetooth::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  right: 0;
+.filter-legend {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
 
-  width: 200px;
-  height: 2px;
-
-  background-color: #000000;
+  border-top: 2px solid #000000;
 }
 
 .price-controls {
@@ -1737,6 +1738,7 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  vertical-align: center;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -1758,11 +1760,11 @@ a {
 }
 
 .filter-price {
-  margin-bottom: 37px;
+  margin-bottom: 25px;
 }
 
 .filter-color {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .filter-bluetooth {
@@ -1814,7 +1816,7 @@ a {
 }
 
 .filter-option label {
-  padding-left: 39px;
+  padding-left: 38px;
 }
 
 .filter-color-list {
@@ -2137,24 +2139,28 @@ a {
   display: flex;
   justify-content: space-between;
   min-height: 70px;
-  margin-top: 9px;
-  margin-bottom: 76px;
+  margin-top: 8px;
+  margin-bottom: 77px;
 
   background-color: rgba(0, 0, 0, 0.08);
 }
 
 .pagination-list a {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 22px;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  line-height: 70px;
+  line-height: 24px;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.5px;
 }
 
 .pagination-direct {
-  padding: 0 30px;
+  padding: 0 27px 0 29px;
 }
 
 .pagination-back {
@@ -2163,15 +2169,15 @@ a {
 
 .pagination-next {
   margin-left: auto;
-  padding: 0 25px 0 35px;
+  padding: 0 26px 0 32px;
 }
 
 .pagination-item {
-  margin: 0 15px;
+  margin: 0 14px;
 }
 
 .pagination-item-first {
-  margin-left: 30px;
+  margin-left: 29px;
 }
 
 .pagination-item a {
